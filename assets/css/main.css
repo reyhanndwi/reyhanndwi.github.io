@@ -1,0 +1,76 @@
+/* untuk header */
+.main-nav {
+    background-color: #D62828;
+}
+.main-nav .navbar-nav a.nav-link {
+    color: #fff;
+    font-weight: 600;
+}
+.main-nav .navbar-nav .nav-link.active,.main-nav
+.navbar-nav .nav-link:hover {
+    color: #FFC300;
+}
+/* jumbotron */
+.main-merah {
+    background-color: #D62828;
+    color: #fff;
+}
+/* diakui */
+#main-sudah img {
+    max-height: 100px;
+    max-width: 150px;
+}
+#main-sudah a {
+    display: inline-block;
+    word-spacing: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+h2.main-judul::after {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    border-bottom:10px solid#FFC300 ;
+    width: 100px;
+    border-radius: 25px;
+    content: "";
+
+}
+.navbar.scrolled {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px-10px 30px #666;
+}
+.navbar.scrolled a.nav-link{
+    color: #D62828;
+}
+.navbar img.main-logo {
+    max-width: 120px;
+}
+.main-unes {
+    background-color: burlywood;
+}
+.main-atas-judul {
+    color: #D62828;
+    font-size: 22px;
+    font-weight: 600;
+}
+.main-footer-menu h4 {
+color: #fff;
+}
+.main-footer-menu a {
+    color: #fff ;
+    text-decoration: none;
+}
+.main-footer-menu li {
+    color: #fff;
+}
+.main-footer-menu a:hover {
+    color:#FFC300 ;
+}
+.main-nav h1 {
+    color: #fff;
+}
+.main-sejarah {
+    background-color: #666;
+}
