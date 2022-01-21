@@ -158,48 +158,38 @@
           </div>               
         </div>
       </section>
-      <section id="contact">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col">
-              <h2>Berikan Komentar</h2>
-            </div>
+      <body>
+        <div class="container-fluid">
+          <h2>Frequently Asked Questions(FAQ)</h2>
+          <div class="accordion">
+            <div class="icon"></div>
+            <h5>Berasal dari mana makna,sejarah dan teknik membatik ini?</h5>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <div class="container py-5">
-                <div class="alert alert-danger alert-dismissible fade show d-none my-alert" role="alert">
-                  <strong>Terimakasih!</strong> Pesan anda sudah terkirim.
-                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-              <form name='komentar-pengunjung'>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
-                </div>
-                <div class="mb-3">
-                  <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-                </div>
-             
-                
-                <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+          <div class="panel">
+            <p>Semua yang ada di website ini mulai dari makna, sejarah dan teknik ini diambil dari jurnal dan buku</p>
+          </div>
 
-                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  Loading...
-                </button>
-              </form>
-            </div>
+          <div class="accordion">
+            <div class="icon"></div>
+            <h5>Apa itu batik pesisiran? dan mengapa dinamakan batik pesisiran?</h5>
           </div>
+          <div class="panel">
+            <p>Batik pesisiran merupakan batik yang diproduksi didaerah pesisir atau yang berdeketan langsung dengan pantai.
+              seperti contoh pekalongan, indramayu, cirebon dan madura
+            </p>
+          </div>
+
+          <div class="accordion">
+            <div class="icon"></div>
+            <h5>Apa yang membedakan batik yogyakarta dan batik pesisiran?</h5>
+          </div>
+          <div class="panel">
+            <p>kalau batik yogyakarta itu merupakan batik klasik atau batik keratonan bisa disebut juga batik pedalaman sedangkan batik pesisiran berasal dari daerah pesisir yaitu daerah dekat</p>
+          </div>
+
         </div>
-      </div>
-
-      </section>
+        <script src="assets/js/app.js"></script>
+      </body>
       <footer>
         <div class="main-footer-menu main-nav py-2">
           <div class="container">
@@ -219,32 +209,5 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyHHnVADvW0sVGdcry89M6ntTXrwUtM5bpc0jwmNuL49Jcgjqvf3VOZo0HGW_ty7DJ8/exec'
-      const form = document.forms['komentar-pengunjung']
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-        // ketika tombol sumbit diklik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            // tampilan alert
-            myAlert.classList.toggle('d-none');
-            // reset form
-            form.reset();
-            console.log('Success!', response)})
-          .catch(error => console.error('Error!', error.message))
-      });
-    </script>
   </body>
 </html>

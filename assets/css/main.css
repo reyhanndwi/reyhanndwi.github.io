@@ -74,3 +74,49 @@ color: #fff;
 .main-sejarah {
     background-color: #666;
 }
+.accordion {
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #D62828;
+    background: #D62828;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+.accordion .icon {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: no-repeat 8px 7px #FFC300;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+.accordion h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #FFC300;
+}
+.active .icon {
+    background: #D62828 no-repeat 8px -25px;
+}
+.panel {
+    padding: 0 15px;
+    border-left: 1px solid #FFC300;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+.container-fluid {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
